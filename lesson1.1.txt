@@ -1,0 +1,23 @@
+vitaly@vitaly-VirtualBox:~$ uname
+Linux
+vitaly@vitaly-VirtualBox:~$ uname -a
+Linux vitaly-VirtualBox 5.11.0-27-generic #29~20.04.1-Ubuntu SMP Wed Aug 11 15:58:17 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+vitaly@vitaly-VirtualBox:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.3 LTS
+Release:	20.04
+Codename:	focal
+vitaly@vitaly-VirtualBox:~$ sudo apt update
+[sudo] пароль для vitaly: 
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu focal InRelease
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu focal-updates InRelease
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu focal-backports InRelease           
+Сущ:4 http://security.ubuntu.com/ubuntu focal-security InRelease              
+Чтение списков пакетов… Готово            
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Может быть обновлено 66 пакетов. Запустите «apt list --upgradable» для их показа.
+vitaly@vitaly-VirtualBox:~$ mc
+
+vitaly@vitaly-VirtualBox:~$ 
