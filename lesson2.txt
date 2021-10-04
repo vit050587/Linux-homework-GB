@@ -1,0 +1,507 @@
+Using username "vitaly".
+Server refused our key
+vitaly@192.168.1.8's password:
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.11.0-27-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+84 updates can be applied immediately.
+41 of these updates are standard security updates.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Sat Oct  2 16:44:12 2021 from 192.168.1.253
+vitaly@vitaly-VirtualBox:~$ pwd
+/home/vitaly
+vitaly@vitaly-VirtualBox:~$ cd ..
+vitaly@vitaly-VirtualBox:/home$ tree
+.
+└── vitaly
+    ├── snap
+    │   └── snap-store
+    │       ├── 547
+    │       ├── common
+    │       └── current -> 547
+    ├── Видео
+    ├── Документы
+    ├── Загрузки
+    ├── Изображения
+    ├── Музыка
+    ├── Общедоступные
+    ├── Рабочий стол
+    └── Шаблоны
+
+14 directories, 0 files
+vitaly@vitaly-VirtualBox:/home$ mkdir students
+mkdir: невозможно создать каталог «students»: Отказано в доступе
+vitaly@vitaly-VirtualBox:/home$ sudo mkdir students
+[sudo] пароль для vitaly:
+vitaly@vitaly-VirtualBox:/home$ ls
+students  vitaly
+vitaly@vitaly-VirtualBox:/home$ sudo mkdir mentors
+vitaly@vitaly-VirtualBox:/home$ ls
+mentors  students  vitaly
+vitaly@vitaly-VirtualBox:/home$ cd students
+vitaly@vitaly-VirtualBox:/home/students$ nano students_list.txt
+vitaly@vitaly-VirtualBox:/home/students$ ls
+vitaly@vitaly-VirtualBox:/home/students$ sudo nano students_list.txt
+vitaly@vitaly-VirtualBox:/home/students$ ls
+students_list.txt
+vitaly@vitaly-VirtualBox:/home/students$ cd ..
+vitaly@vitaly-VirtualBox:/home$ cd mentors
+vitaly@vitaly-VirtualBox:/home/mentors$ sudo nano mentors_list.txt
+vitaly@vitaly-VirtualBox:/home/mentors$ less mentors_list.txt
+vitaly@vitaly-VirtualBox:/home/mentors$ cd ..
+vitaly@vitaly-VirtualBox:/home$ tree
+.
+├── mentors
+│   └── mentors_list.txt
+├── students
+│   └── students_list.txt
+└── vitaly
+    ├── snap
+    │   └── snap-store
+    │       ├── 547
+    │       ├── common
+    │       └── current -> 547
+    ├── Видео
+    ├── Документы
+    ├── Загрузки
+    ├── Изображения
+    ├── Музыка
+    ├── Общедоступные
+    ├── Рабочий стол
+    └── Шаблоны
+
+16 directories, 2 files
+vitaly@vitaly-VirtualBox:/home$ mv mentors_list.txt students/
+mv: не удалось выполнить stat для 'mentors_list.txt': Нет такого файла или каталога
+vitaly@vitaly-VirtualBox:/home$ mv mentors/mentors_list.txt students/
+mv: невозможно переместить 'mentors/mentors_list.txt' в 'students/mentors_list.txt': Отказано в доступе
+vitaly@vitaly-VirtualBox:/home$ sudo mv mentors/mentors_list.txt students/
+vitaly@vitaly-VirtualBox:/home$ tree
+.
+├── mentors
+├── students
+│   ├── mentors_list.txt
+│   └── students_list.txt
+└── vitaly
+    ├── snap
+    │   └── snap-store
+    │       ├── 547
+    │       ├── common
+    │       └── current -> 547
+    ├── Видео
+    ├── Документы
+    ├── Загрузки
+    ├── Изображения
+    ├── Музыка
+    ├── Общедоступные
+    ├── Рабочий стол
+    └── Шаблоны
+
+16 directories, 2 files
+vitaly@vitaly-VirtualBox:/home$ rm mentors
+rm: невозможно удалить 'mentors': Это каталог
+vitaly@vitaly-VirtualBox:/home$ rm -r mentors
+rm: удалить защищённый от записи каталог 'mentors'? y
+rm: невозможно удалить 'mentors': Отказано в доступе
+vitaly@vitaly-VirtualBox:/home$ sudo rm -r mentors
+vitaly@vitaly-VirtualBox:/home$ tree
+.
+├── students
+│   ├── mentors_list.txt
+│   └── students_list.txt
+└── vitaly
+    ├── snap
+    │   └── snap-store
+    │       ├── 547
+    │       ├── common
+    │       └── current -> 547
+    ├── Видео
+    ├── Документы
+    ├── Загрузки
+    ├── Изображения
+    ├── Музыка
+    ├── Общедоступные
+    ├── Рабочий стол
+    └── Шаблоны
+
+15 directories, 2 files
+vitaly@vitaly-VirtualBox:/home$ mv students students_and_mentors
+mv: невозможно переместить 'students' в 'students_and_mentors': Отказано в доступе
+vitaly@vitaly-VirtualBox:/home$ sudo mv students students_and_mentors
+vitaly@vitaly-VirtualBox:/home$ tree
+.
+├── students_and_mentors
+│   ├── mentors_list.txt
+│   └── students_list.txt
+└── vitaly
+    ├── snap
+    │   └── snap-store
+    │       ├── 547
+    │       ├── common
+    │       └── current -> 547
+    ├── Видео
+    ├── Документы
+    ├── Загрузки
+    ├── Изображения
+    ├── Музыка
+    ├── Общедоступные
+    ├── Рабочий стол
+    └── Шаблоны
+
+15 directories, 2 files
+vitaly@vitaly-VirtualBox:/home$ rm -r students_and_mentors
+rm: спуститься в защищённый от записи каталог 'students_and_mentors'? y
+rm: удалить защищённый от записи обычный файл 'students_and_mentors/mentors_list.txt'? y
+rm: невозможно удалить 'students_and_mentors/mentors_list.txt': Отказано в доступе
+rm: удалить защищённый от записи обычный файл 'students_and_mentors/students_list.txt'? y
+rm: невозможно удалить 'students_and_mentors/students_list.txt': Отказано в доступе
+vitaly@vitaly-VirtualBox:/home$ tree
+.
+├── students_and_mentors
+│   ├── mentors_list.txt
+│   └── students_list.txt
+└── vitaly
+    ├── snap
+    │   └── snap-store
+    │       ├── 547
+    │       ├── common
+    │       └── current -> 547
+    ├── Видео
+    ├── Документы
+    ├── Загрузки
+    ├── Изображения
+    ├── Музыка
+    ├── Общедоступные
+    ├── Рабочий стол
+    └── Шаблоны
+
+15 directories, 2 files
+vitaly@vitaly-VirtualBox:/home$ sudo rm -r students_and_mentors
+vitaly@vitaly-VirtualBox:/home$ tree
+.
+└── vitaly
+    ├── snap
+    │   └── snap-store
+    │       ├── 547
+    │       ├── common
+    │       └── current -> 547
+    ├── Видео
+    ├── Документы
+    ├── Загрузки
+    ├── Изображения
+    ├── Музыка
+    ├── Общедоступные
+    ├── Рабочий стол
+    └── Шаблоны
+
+14 directories, 0 files
+vitaly@vitaly-VirtualBox:/home$ Using username "vitaly".
+/home/vitaly
+vitaly@vitaly-VirtualBox:~$ cd ..
+vitaly@vitaly-VirtualBox:/home$ tree
+.
+└── vitaly
+    ├── snap
+    │   └── snap-store
+    │       ├── 547
+    │       ├── common
+    │       └── current -> 547
+    ├── Видео
+    ├── Документы
+    ├── Загрузки
+    ├── Изображения
+    ├── Музыка
+    ├── Общедоступные
+    ├── Рабочий стол
+    └── Шаблоны
+
+14 directories, 0 files
+vitaly@vitaly-VirtualBox:/home$ mkdir students
+mkdir: невозможно создать каталог «students»: Отказано в доступе
+vitaly@vitaly-VirtualBox:/home$ sudo mkdir students
+[sudo] пароль для vitaly:
+vitaly@vitaly-VirtualBox:/home$ ls
+students  vitaly
+vitaly@vitaly-VirtualBox:/home$ sudo mkdir mentors
+vitaly@vitaly-VirtualBox:/home$ ls
+mentors  students  vitaly
+vitaly@vitaly-VirtualBox:/home$ cd students
+vitaly@vitaly-VirtualBox:/home/students$ nano students_list.txt
+vitaly@vitaly-VirtualBox:/home/students$ ls
+vitaly@vitaly-VirtualBox:/home/students$ sudo nano students_list.txt
+vitaly@vitaly-VirtualBox:/home/students$ ls
+students_list.txt
+vitaly@vitaly-VirtualBox:/home/students$ cd ..
+vitaly@vitaly-VirtualBox:/home$ cd mentors
+vitaly@vitaly-VirtualBox:/home/mentors$ sudo nano mentors_list.txt
+vitaly@vitaly-VirtualBox:/home/mentors$ less mentors_list.txt
+vitaly@vitaly-VirtualBox:/home/mentors$ cd ..
+vitaly@vitaly-VirtualBox:/home$ tree
+.
+├── mentors
+│   └── mentors_list.txt
+├── students
+│   └── students_list.txt
+└── vitaly
+    ├── snap
+    │   └── snap-store
+    │       ├── 547
+    │       ├── common
+    │       └── current -> 547
+    ├── Видео
+    ├── Документы
+    ├── Загрузки
+    ├── Изображения
+    ├── Музыка
+    ├── Общедоступные
+    ├── Рабочий стол
+    └── Шаблоны
+
+16 directories, 2 files
+vitaly@vitaly-VirtualBox:/home$ mv mentors_list.txt students/
+mv: не удалось выполнить stat для 'mentors_list.txt': Нет такого файла или каталога
+vitaly@vitaly-VirtualBox:/home$ mv mentors/mentors_list.txt students/
+mv: невозможно переместить 'mentors/mentors_list.txt' в 'students/mentors_list.txt': Отказано в доступе
+vitaly@vitaly-VirtualBox:/home$ sudo mv mentors/mentors_list.txt students/
+vitaly@vitaly-VirtualBox:/home$ tree
+.
+├── mentors
+├── students
+│   ├── mentors_list.txt
+│   └── students_list.txt
+└── vitaly
+    ├── snap
+    │   └── snap-store
+    │       ├── 547
+    │       ├── common
+    │       └── current -> 547
+    ├── Видео
+    ├── Документы
+    ├── Загрузки
+    ├── Изображения
+    ├── Музыка
+    ├── Общедоступные
+    ├── Рабочий стол
+    └── Шаблоны
+
+16 directories, 2 files
+vitaly@vitaly-VirtualBox:/home$ rm mentors
+rm: невозможно удалить 'mentors': Это каталог
+vitaly@vitaly-VirtualBox:/home$ rm -r mentors
+rm: удалить защищённый от записи каталог 'mentors'? y
+rm: невозможUsing: команда не найдена
+vitaly@vitaly-VirtualBox:/home$ Server refused our key
+
+Команда «Server» не найдена. Возможно, вы имели в виду:
+
+  command 'server' from deb golang-golang-x-tools (1:0.0~git20191118.07fc4c7+ds-1)
+
+Try: sudo apt install <deb name>
+
+vitaly@vitaly-VirtualBox:/home$ vitaly@192.168.1.8's password:
+> Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.11.0-27-generic x86_64)
+>
+>  * Documentation:  https://help.ubuntu.com
+>  * Management:     https://landscape.canonical.com
+>  * Support:        https://ubuntu.com/advantage
+>
+> 84 updates can be applied immediately.
+> 41 of these updates are standard security updates.
+> Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+>
+> Your Hardware Enablement Stack (HWE) is supported until April 2025.
+> Last login: Sat Oct  2 16:44:12 2021 from 192.168.1.253
+> vitaly@vitaly-VirtualBox:~$ pwd
+> /home/vitaly
+> vitaly@vitaly-VirtualBox:~$ cd ..
+> vitaly@vitaly-VirtualBox:/home$ tree
+> .
+> └── vitaly
+>     ├── snap
+>     │   └── snap-store
+>     │       ├── 547
+>     │       ├── common
+>     │       └── current -> 547
+>     ├── Видео
+>     ├── Документы
+>     ├── Загрузки
+>     ├── Изображения
+>     ├── Музыка
+>     ├── Общедоступные
+>     ├── Рабочий стол
+>     └── Шаблоны
+>
+> 14 directories, 0 files
+> vitaly@vitaly-VirtualBox:/home$ mkdir students
+> mkdir: невозможно создать каталог «students»: Отказано в доступе
+> vitaly@vitaly-VirtualBox:/home$ sudo mkdir students
+> [sudo] пароль для vitaly:
+> vitaly@vitaly-VirtualBox:/home$ ls
+> students  vitaly
+> vitaly@vitaly-VirtualBox:/home$ sudo mkdir mentors
+> vitaly@vitaly-VirtualBox:/home$ ls
+> mentors  students  vitaly
+> vitaly@vitaly-VirtualBox:/home$ cd students
+> vitaly@vitaly-VirtualBox:/home/students$ nano students_list.txt
+> vitaly@vitaly-VirtualBox:/home/students$ ls
+> vitaly@vitaly-VirtualBox:/home/students$ sudo nano students_list.txt
+> vitaly@vitaly-VirtualBox:/home/students$ ls
+> students_list.txt
+> vitaly@vitaly-VirtualBox:/home/students$ cd ..
+> vitaly@vitaly-VirtualBox:/home$ cd mentors
+> vitaly@vitaly-VirtualBox:/home/mentors$ sudo nano mentors_list.txt
+> vitaly@vitaly-VirtualBox:/home/mentors$ less mentors_list.txt
+> vitaly@vitaly-VirtualBox:/home/mentors$ cd ..
+> vitaly@vitaly-VirtualBox:/home$ tree
+> .
+> ├── mentors
+> │   └── mentors_list.txt
+> ├── students
+> │   └── students_list.txt
+> └── vitaly
+>     ├── snap
+>     │   └── snap-store
+>     │       ├── 547
+>     │       ├── common
+>     │       └── current -> 547
+>     ├── Видео
+>     ├── Документы
+>     ├── Загрузки
+>     ├── Изображения
+>     ├── Музыка
+>     ├── Общедоступные
+>     ├── Рабочий стол
+>     └── Шаблоны
+>
+> 16 directories, 2 files
+> vitaly@vitaly-VirtualBox:/home$ mv mentors_list.txt students/
+> mv: не удалось выполнить stat для 'mentors_list.txt': Нет такого файла или каталога
+> vitaly@vitaly-VirtualBox:/home$ mv mentors/mentors_list.txt students/
+> mv: невозможно переместить 'mentors/mentors_list.txt' в 'students/mentors_list.txt': Отказано в доступе
+> vitaly@vitaly-VirtualBox:/home$ sudo mv mentors/mentors_list.txt students/
+> vitaly@vitaly-VirtualBox:/home$ tree
+> .
+> ├── mentors
+> ├── students
+> │   ├── mentors_list.txt
+> │   └── students_list.txt
+> └── vitaly
+>     ├── snap
+>     │   └── snap-store
+>     │       ├── 547
+>     │       ├── common
+>     │       └── current -> 547
+>     ├── Видео
+>     ├── Документы
+>     ├── Загрузки
+>     ├── Изображения
+>     ├── Музыка
+>     ├── Общедоступные
+>     ├── Рабочий стол
+>     └── Шаблоны
+>
+> 16 directories, 2 files
+> vitaly@vitaly-VirtualBox:/home$ rm mentors
+> rm: невозможно удалить 'mentors': Это каталог
+> vitaly@vitaly-VirtualBox:/home$ rm -r mentors
+> rm: удалить защищённый от записи каталог 'mentors'? y
+> rm: невозможно удалить 'mentors': Отказано в доступе
+> vitaly@vitaly-VirtualBox:/home$ sudo rm -r mentors
+> vitaly@vitaly-VirtualBox:/home$ tree
+> .
+> ├── students
+> │   ├── mentors_list.txt
+> │   └── students_list.txt
+> └── vitaly
+>     ├── snap
+>     │   └── snap-store
+>     │       ├── 547
+>     │       ├── common
+>     │       └── current -> 547
+>     ├── Видео
+>     ├── Документы
+>     ├── Загрузки
+>     ├── Изображения
+>     ├── Музыка
+>     ├── Общедоступные
+>     ├── Рабочий стол
+>     └── Шаблоны
+>
+> 15 directories, 2 files
+> vitaly@vitaly-VirtualBox:/home$ mv students students_and_mentors
+> mv: невозможно переместить 'students' в 'students_and_mentors': Отказано в доступе
+> vitaly@vitaly-VirtualBox:/home$ sudo mv students students_and_mentors
+> vitaly@vitaly-VirtualBox:/home$ tree
+> .
+> ├── students_and_mentors
+> │   ├── mentors_list.txt
+> │   └── students_list.txt
+> └── vitaly
+>     ├── snap
+>     │   └── snap-store
+>     │       ├── 547
+>     │       ├── common
+>     │       └── current -> 547
+>     ├── Видео
+>     ├── Документы
+>     ├── Загрузки
+>     ├── Изображения
+>     ├── Музыка
+>     ├── Общедоступные
+>     ├── Рабочий стол
+>     └── Шаблоны
+>
+> 15 directories, 2 files
+> vitaly@vitaly-VirtualBox:/home$ rm -r students_and_mentors
+> rm: спуститься в защищённый от записи каталог 'students_and_mentors'? y
+> rm: удалить защищённый от записи обычный файл 'students_and_mentors/mentors_list.txt'? y
+> rm: невозможно удалить 'students_and_mentors/mentors_list.txt': Отказано в доступе
+> rm: удалить защищённый от записи обычный файл 'students_and_mentors/students_list.txt'? y
+> rm: невозможно удалить 'students_and_mentors/students_list.txt': Отказано в доступе
+> vitaly@vitaly-VirtualBox:/home$ tree
+> .
+> ├── students_and_mentors
+> │   ├── mentors_list.txt
+> │   └── students_list.txt
+> └── vitaly
+>     ├── snap
+>     │   └── snap-store
+>     │       ├── 547
+>     │       ├── common
+>     │       └── current -> 547
+>     ├── Видео
+>     ├── Документы
+>     ├── Загрузки
+>     ├── Изображения
+>     ├── Музыка
+>     ├── Общедоступные
+>     ├── Рабочий стол
+>     └── Шаблоны
+>
+> 15 directories, 2 files
+> vitaly@vitaly-VirtualBox:/home$ sudo rm -r students_and_mentors
+> vitaly@vitaly-VirtualBox:/home$ tree
+> .
+> └── vitaly
+>     ├── snap
+>     │   └── snap-store
+>     │       ├── 547
+>     │       ├── common
+>     │       └── current -> 547
+>     ├── Видео
+>     ├── Документы
+>     ├── Загрузки
+>     ├── Изображения
+>     ├── Музыка
+>     ├── Общедоступные
+>     ├── Рабочий стол
+>     └── Шаблоны
+>
+> 14 directories, 0 files
+> vitaly@vitaly-VirtualBox:/home$
+>
