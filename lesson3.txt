@@ -1,0 +1,164 @@
+Using username "vitaly".
+Server refused our key
+vitaly@192.168.1.8's password:
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.11.0-27-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+84 updates can be applied immediately.
+41 of these updates are standard security updates.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Fri Oct  8 17:52:15 2021 from 192.168.1.4
+vitaly@vitaly-VirtualBox:~$ sudo more /etc/group | grep VIT
+[sudo] пароль для vitaly:
+VIT:x:1001:
+VITAL:x:1002:
+userVIT2:x:1004:
+vitaly@vitaly-VirtualBox:~$ sudo groupadd VITAL2
+vitaly@vitaly-VirtualBox:~$ sudo more /etc/group | grep VIT
+VIT:x:1001:
+VITAL:x:1002:
+userVIT2:x:1004:
+VITAL2:x:1005:
+vitaly@vitaly-VirtualBox:~$ sudo useradd -m -s /bin/bash userVIT1
+useradd: warning: the home directory /home/userVIT1 already exists.
+useradd: Not copying any file from skel directory into it.
+vitaly@vitaly-VirtualBox:~$ sudo passwd userVIT1
+Новый пароль :
+Повторите ввод нового пароля :
+passwd: пароль успешно обновлён
+vitaly@vitaly-VirtualBox:~$ sudo more /etc/group | grep VIT
+VIT:x:1001:
+VITAL:x:1002:
+userVIT2:x:1004:
+VITAL2:x:1005:
+userVIT1:x:1003:
+vitaly@vitaly-VirtualBox:~$ sudo useradd -m -s /bin/bash userVIT3
+vitaly@vitaly-VirtualBox:~$ sudo passwd userVIT3
+Новый пароль :
+Повторите ввод нового пароля :
+passwd: пароль успешно обновлён
+vitaly@vitaly-VirtualBox:~$ sudo more /etc/group | grep VIT
+VIT:x:1001:
+VITAL:x:1002:
+userVIT2:x:1004:
+VITAL2:x:1005:
+userVIT1:x:1003:
+userVIT3:x:1006:
+vitaly@vitaly-VirtualBox:~$ sudo usermod -G VITAL2 userVIT1
+vitaly@vitaly-VirtualBox:~$ sudo usermod -G VITAL2 userVIT3
+vitaly@vitaly-VirtualBox:~$ su userVIT1
+Пароль:
+userVIT1@vitaly-VirtualBox:/home/vitaly$ whoami
+userVIT1
+userVIT1@vitaly-VirtualBox:/home/vitaly$ more /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,vitaly
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:vitaly
+floppy:x:25:
+tape:x:26:
+sudo:x:27:vitaly
+audio:x:29:pulse
+dip:x:30:vitaly
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:vitaly
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+bluetooth:x:112:
+ssl-cert:x:113:
+uuidd:x:114:
+tcpdump:x:115:
+avahi-autoipd:x:116:
+rtkit:x:117:
+ssh:x:118:
+netdev:x:119:
+lpadmin:x:120:vitaly
+avahi:x:121:
+scanner:x:122:saned
+saned:x:123:
+nm-openvpn:x:124:
+whoopsie:x:125:
+colord:x:126:
+geoclue:x:127:
+pulse:x:128:
+pulse-access:x:129:
+gdm:x:130:
+sssd:x:131:
+lxd:x:132:vitaly
+vitaly:x:1000:
+sambashare:x:133:vitaly
+systemd-coredump:x:999:
+vboxsf:x:998:
+VIT:x:1001:
+VITAL:x:1002:
+userVIT2:x:1004:
+VITAL2:x:1005:userVIT1,userVIT3
+userVIT1:x:1003:
+userVIT3:x:1006:
+userVIT1@vitaly-VirtualBox:/home/vitaly$ sudo userdel userVIT3
+[sudo] пароль для userVIT1:
+userVIT1 отсутствует в файле sudoers. Данное действие будет занесено в журнал.
+userVIT1@vitaly-VirtualBox:/home/vitaly$ exit
+exit
+vitaly@vitaly-VirtualBox:~$ whoami
+vitaly
+vitaly@vitaly-VirtualBox:~$ sudo visudo
+vitaly@vitaly-VirtualBox:~$ su userVIT1
+Пароль:
+userVIT1@vitaly-VirtualBox:/home/vitaly$ whoami
+userVIT1
+userVIT1@vitaly-VirtualBox:/home/vitaly$ sudo userdel userVIT3
+[sudo] пароль для userVIT1:
+userVIT1@vitaly-VirtualBox:/home/vitaly$ exit
+exit
+vitaly@vitaly-VirtualBox:~$ sudo more /etc/group | grep VIT
+VIT:x:1001:
+VITAL:x:1002:
+userVIT2:x:1004:
+VITAL2:x:1005:userVIT1
+userVIT1:x:1003:
+vitaly@vitaly-VirtualBox:~$
