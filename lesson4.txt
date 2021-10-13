@@ -1,0 +1,396 @@
+vitaly@vitaly-VirtualBox:~$ echo > file.txt
+vitaly@vitaly-VirtualBox:~$ ls
+ file.txt   Видео       Загрузки      Музыка         'Рабочий стол'
+ snap       Документы   Изображения   Общедоступные   Шаблоны
+vitaly@vitaly-VirtualBox:~$ cat /etc/* 1>file1.txt 2>file1_error.txt
+vitaly@vitaly-VirtualBox:~$ ls
+ file1_error.txt   file.txt   Видео       Загрузки      Музыка         'Рабочий стол'
+ file1.txt         snap       Документы   Изображения   Общедоступные   Шаблоны
+vitaly@vitaly-VirtualBox:~$ cat file1_error.txt
+cat: /etc/acpi: Это каталог
+cat: /etc/alsa: Это каталог
+cat: /etc/alternatives: Это каталог
+cat: /etc/apm: Это каталог
+cat: /etc/apparmor: Это каталог
+cat: /etc/apparmor.d: Это каталог
+cat: /etc/apport: Это каталог
+cat: /etc/apt: Это каталог
+cat: /etc/avahi: Это каталог
+cat: /etc/bash_completion.d: Это каталог
+cat: /etc/binfmt.d: Это каталог
+cat: /etc/bluetooth: Это каталог
+cat: /etc/brlapi.key: Отказано в доступе
+cat: /etc/brltty: Это каталог
+cat: /etc/ca-certificates: Это каталог
+cat: /etc/calendar: Это каталог
+cat: /etc/chatscripts: Это каталог
+cat: /etc/console-setup: Это каталог
+cat: /etc/cracklib: Это каталог
+cat: /etc/cron.d: Это каталог
+cat: /etc/cron.daily: Это каталог
+cat: /etc/cron.hourly: Это каталог
+cat: /etc/cron.monthly: Это каталог
+cat: /etc/cron.weekly: Это каталог
+cat: /etc/cups: Это каталог
+cat: /etc/cupshelpers: Это каталог
+cat: /etc/dbus-1: Это каталог
+cat: /etc/dconf: Это каталог
+cat: /etc/default: Это каталог
+cat: /etc/depmod.d: Это каталог
+cat: /etc/dhcp: Это каталог
+cat: /etc/dictionaries-common: Это каталог
+cat: /etc/dpkg: Это каталог
+cat: /etc/emacs: Это каталог
+cat: /etc/environment.d: Это каталог
+cat: /etc/firefox: Это каталог
+cat: /etc/fonts: Это каталог
+cat: /etc/fwupd: Это каталог
+cat: /etc/gdb: Это каталог
+cat: /etc/gdm3: Это каталог
+cat: /etc/geoclue: Это каталог
+cat: /etc/ghostscript: Это каталог
+cat: /etc/glvnd: Это каталог
+cat: /etc/gnome: Это каталог
+cat: /etc/groff: Это каталог
+cat: /etc/grub.d: Это каталог
+cat: /etc/gshadow: Отказано в доступе
+cat: /etc/gshadow-: Отказано в доступе
+cat: /etc/gss: Это каталог
+cat: /etc/gtk-2.0: Это каталог
+cat: /etc/gtk-3.0: Это каталог
+cat: /etc/hp: Это каталог
+cat: /etc/ifplugd: Это каталог
+cat: /etc/init: Это каталог
+cat: /etc/init.d: Это каталог
+cat: /etc/initramfs-tools: Это каталог
+cat: /etc/insserv.conf.d: Это каталог
+cat: /etc/iproute2: Это каталог
+cat: /etc/kernel: Это каталог
+cat: /etc/ldap: Это каталог
+cat: /etc/ld.so.conf.d: Это каталог
+cat: /etc/libblockdev: Это каталог
+cat: /etc/libnl-3: Это каталог
+cat: /etc/libpaper.d: Это каталог
+cat: /etc/libreoffice: Это каталог
+cat: /etc/logcheck: Это каталог
+cat: /etc/logrotate.d: Это каталог
+cat: /etc/mc: Это каталог
+cat: /etc/modprobe.d: Это каталог
+cat: /etc/modules-load.d: Это каталог
+cat: /etc/mysql: Это каталог
+cat: /etc/netplan: Это каталог
+cat: /etc/network: Это каталог
+cat: /etc/networkd-dispatcher: Это каталог
+cat: /etc/NetworkManager: Это каталог
+cat: /etc/newt: Это каталог
+cat: /etc/openvpn: Это каталог
+cat: /etc/opt: Это каталог
+cat: /etc/PackageKit: Это каталог
+cat: /etc/pam.d: Это каталог
+cat: /etc/pcmcia: Это каталог
+cat: /etc/perl: Это каталог
+cat: /etc/pki: Это каталог
+cat: /etc/pm: Это каталог
+cat: /etc/polkit-1: Это каталог
+cat: /etc/ppp: Это каталог
+cat: /etc/profile.d: Это каталог
+cat: /etc/pulse: Это каталог
+cat: /etc/python3: Это каталог
+cat: /etc/python3.8: Это каталог
+cat: /etc/rc0.d: Это каталог
+cat: /etc/rc1.d: Это каталог
+cat: /etc/rc2.d: Это каталог
+cat: /etc/rc3.d: Это каталог
+cat: /etc/rc4.d: Это каталог
+cat: /etc/rc5.d: Это каталог
+cat: /etc/rc6.d: Это каталог
+cat: /etc/rcS.d: Это каталог
+cat: /etc/rsyslog.d: Это каталог
+cat: /etc/sane.d: Это каталог
+cat: /etc/security: Это каталог
+cat: /etc/selinux: Это каталог
+cat: /etc/sensors.d: Это каталог
+cat: /etc/sgml: Это каталог
+cat: /etc/shadow: Отказано в доступе
+cat: /etc/shadow-: Отказано в доступе
+cat: /etc/skel: Это каталог
+cat: /etc/snmp: Это каталог
+cat: /etc/speech-dispatcher: Это каталог
+cat: /etc/ssh: Это каталог
+cat: /etc/ssl: Это каталог
+cat: /etc/sudoers: Отказано в доступе
+cat: /etc/sudoers.d: Это каталог
+cat: /etc/sysctl.d: Это каталог
+cat: /etc/systemd: Это каталог
+cat: /etc/terminfo: Это каталог
+cat: /etc/thermald: Это каталог
+cat: /etc/thunderbird: Это каталог
+cat: /etc/tmpfiles.d: Это каталог
+cat: /etc/ubuntu-advantage: Это каталог
+cat: /etc/udev: Это каталог
+cat: /etc/udisks2: Это каталог
+cat: /etc/ufw: Это каталог
+cat: /etc/update-manager: Это каталог
+cat: /etc/update-motd.d: Это каталог
+cat: /etc/update-notifier: Это каталог
+cat: /etc/UPower: Это каталог
+cat: /etc/usb_modeswitch.d: Это каталог
+cat: /etc/vim: Это каталог
+cat: /etc/vulkan: Это каталог
+cat: /etc/wpa_supplicant: Это каталог
+cat: /etc/X11: Это каталог
+cat: /etc/xdg: Это каталог
+cat: /etc/xml: Это каталог
+vitaly@vitaly-VirtualBox:~$ ll -ld /etc/* | cut -f1 -d " "
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r-----
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-s---
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-rw-r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r-----
+-rw-r-----
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+lrwxrwxrwx
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+-r--r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+lrwxrwxrwx
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+lrwxrwxrwx
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-rw-r--
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-rw-r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+lrwxrwxrwx
+lrwxrwxrwx
+-rw-r--r--
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+-rw-r-----
+-rw-r-----
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-rw-r--r--
+-r--r-----
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+lrwxrwxrwx
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+drwxr-xr-x
+drwxr-xr-x
+-rw-r--r--
+vitaly@vitaly-VirtualBox:~$ ll -ld /etc/* | cut -f1 -d " " | sort -u
+drwxr-s---
+drwxr-xr-x
+lrwxrwxrwx
+-r--r-----
+-r--r--r--
+-rw-r-----
+-rw-r--r--
+-rw-rw-r--
+vitaly@vitaly-VirtualBox:~$ cat > test_file.txt
+test
+vitaly@vitaly-VirtualBox:~$ ls
+ file1_error.txt   file.txt   test_file.txt   Документы   Изображения   Общедоступные   Шаблоны
+ file1.txt         snap       Видео           Загрузки    Музыка       'Рабочий стол'
+vitaly@vitaly-VirtualBox:~$ cat  test_file.txt
+test
+vitaly@vitaly-VirtualBox:~$ htop
+Поцесс передан  EOF
+vitaly@vitaly-VirtualBox:~$ ps ax|grep mc
+   1502 ?        Sl     0:00 /usr/libexec/ibus-memconf
+   3380 pts/0    S+     0:00 mc
+   3400 pts/2    S+     0:00 grep --color=auto mc
+vitaly@vitaly-VirtualBox:~$ kill -9 3380
+vitaly@vitaly-VirtualBox:~$ ps ax|grep mc
+   1502 ?        Sl     0:00 /usr/libexec/ibus-memconf
+   3413 pts/2    S+     0:00 grep --color=auto mc
+vitaly@vitaly-VirtualBox:~$
