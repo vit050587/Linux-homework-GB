@@ -1,0 +1,150 @@
+vitaly@vitaly-VirtualBox:~$ ls
+ lesson5   Видео       Загрузки      Музыка         'Рабочий стол'
+ snap      Документы   Изображения   Общедоступные   Шаблоны
+vitaly@vitaly-VirtualBox:~$ cd lesson5
+vitaly@vitaly-VirtualBox:~/lesson5$ ls # я его перенес из домашней категории.
+file1
+vitaly@vitaly-VirtualBox:~/lesson5$ cp file1 file2
+vitaly@vitaly-VirtualBox:~/lesson5$ ln -s file1 file3
+vitaly@vitaly-VirtualBox:~/lesson5$ ln file1 file4
+vitaly@vitaly-VirtualBox:~/lesson5$ ls -li
+итого 12
+4680 -rw-rw-r-- 2 vitaly vitaly 24 окт 15 09:12 file1
+7511 -rw-rw-r-- 1 vitaly vitaly 24 окт 15 09:14 file2
+7526 lrwxrwxrwx 1 vitaly vitaly  5 окт 15 09:14 file3 -> file1
+4680 -rw-rw-r-- 2 vitaly vitaly 24 окт 15 09:12 file4
+vitaly@vitaly-VirtualBox:~/lesson5$ rm file1
+vitaly@vitaly-VirtualBox:~/lesson5$ ls -li
+итого 8
+7511 -rw-rw-r-- 1 vitaly vitaly 24 окт 15 09:14 file2
+7526 lrwxrwxrwx 1 vitaly vitaly  5 окт 15 09:14 file3 -> file1
+4680 -rw-rw-r-- 1 vitaly vitaly 24 окт 15 09:12 file4
+vitaly@vitaly-VirtualBox:~/lesson5$ cat file?
+test
+test
+test
+test
+testcat: file3: Нет такого файла или каталога
+test
+test
+test
+test
+testvitaly@vitaly-VirtualBox:~/lesson5$ 
+vitaly@vitaly-VirtualBox:~/lesson5$ ls
+file2  file3  file4
+vitaly@vitaly-VirtualBox:~/lesson5$ mv file2 file22
+vitaly@vitaly-VirtualBox:~/lesson5$ mv file3 file33
+vitaly@vitaly-VirtualBox:~/lesson5$ mv file4 file44
+vitaly@vitaly-VirtualBox:~/lesson5$ ln -s file22 file55
+vitaly@vitaly-VirtualBox:~/lesson5$ mkdir test
+vitaly@vitaly-VirtualBox:~/lesson5$ ls
+file22  file33  file44  file55  test
+vitaly@vitaly-VirtualBox:~/lesson5$ ls -li
+итого 12
+7511 -rw-rw-r-- 1 vitaly vitaly   24 окт 15 09:14 file22
+7526 lrwxrwxrwx 1 vitaly vitaly    5 окт 15 09:14 file33 -> file1
+4680 -rw-rw-r-- 1 vitaly vitaly   24 окт 15 09:12 file44
+9225 lrwxrwxrwx 1 vitaly vitaly    6 окт 15 09:51 file55 -> file22
+9227 drwxrwxr-x 2 vitaly vitaly 4096 окт 15 09:52 test
+vitaly@vitaly-VirtualBox:~/lesson5$ mv file33 test
+vitaly@vitaly-VirtualBox:~/lesson5$ mv file55 test
+vitaly@vitaly-VirtualBox:~/lesson5$ ls -l ./test
+итого 0
+lrwxrwxrwx 1 vitaly vitaly 5 окт 15 09:14 file33 -> file1
+lrwxrwxrwx 1 vitaly vitaly 6 окт 15 09:51 file55 -> file22
+vitaly@vitaly-VirtualBox:~/lesson5$ ^C
+vitaly@vitaly-VirtualBox:~/lesson5$ 
+vitaly@vitaly-VirtualBox:~/lesson5$ ls
+file22  file44  test
+vitaly@vitaly-VirtualBox:~/lesson5$ ls -l
+итого 12
+-rw-rw-r-- 1 vitaly vitaly   24 окт 15 09:14 file22
+-rw-rw-r-- 1 vitaly vitaly   24 окт 15 09:12 file44
+drwxrwxr-x 2 vitaly vitaly 4096 окт 15 09:53 test
+vitaly@vitaly-VirtualBox:~/lesson5$ chmod ug=rw,o=r file22
+vitaly@vitaly-VirtualBox:~/lesson5$ chmod 600 file44
+vitaly@vitaly-VirtualBox:~/lesson5$ ls -l
+итого 12
+-rw-rw-r-- 1 vitaly vitaly   24 окт 15 09:14 file22
+-rw------- 1 vitaly vitaly   24 окт 15 09:12 file44
+drwxrwxr-x 2 vitaly vitaly 4096 окт 15 09:53 test
+vitaly@vitaly-VirtualBox:~/lesson5$ 
+vitaly@vitaly-VirtualBox:~/lesson5$ sudo groupadd developer
+[sudo] пароль для vitaly: 
+vitaly@vitaly-VirtualBox:~/lesson5$ sudo developer userVIT1
+sudo: developer: команда не найдена
+vitaly@vitaly-VirtualBox:~/lesson5$ sudo usermod -aG developer userVIT1
+vitaly@vitaly-VirtualBox:~/lesson5$ sudo usermod -aG developer userVIT2
+vitaly@vitaly-VirtualBox:~/lesson5$ ls
+file22  file44  test
+vitaly@vitaly-VirtualBox:~/lesson5$ ls -l
+итого 12
+-rw-rw-r-- 1 vitaly vitaly   24 окт 15 09:14 file22
+-rw------- 1 vitaly vitaly   24 окт 15 09:12 file44
+drwxrwxr-x 2 vitaly vitaly 4096 окт 15 09:53 test
+vitaly@vitaly-VirtualBox:~/lesson5$ cd test
+vitaly@vitaly-VirtualBox:~/lesson5/test$ ls -l
+итого 0
+lrwxrwxrwx 1 vitaly vitaly 5 окт 15 09:14 file33 -> file1
+lrwxrwxrwx 1 vitaly vitaly 6 окт 15 09:51 file55 -> file22
+vitaly@vitaly-VirtualBox:~/lesson5/test$ ~
+bash: /home/vitaly: Это каталог
+vitaly@vitaly-VirtualBox:~/lesson5/test$ cd ..
+vitaly@vitaly-VirtualBox:~/lesson5$ chgrp developer test
+chgrp: изменение группы для 'test': Операция не позволена
+vitaly@vitaly-VirtualBox:~/lesson5$ sudo chgrp developer test
+vitaly@vitaly-VirtualBox:~/lesson5$ ls -l
+итого 12
+-rw-rw-r-- 1 vitaly vitaly      24 окт 15 09:14 file22
+-rw------- 1 vitaly vitaly      24 окт 15 09:12 file44
+drwxrwxr-x 2 vitaly developer 4096 окт 15 09:53 test
+vitaly@vitaly-VirtualBox:~/lesson5$ ls -l
+итого 12
+-rw-rw-r-- 1 vitaly vitaly      24 окт 15 09:14 file22
+-rw------- 1 vitaly vitaly      24 окт 15 09:12 file44
+drwxrwsr-x 2 vitaly developer 4096 окт 15 09:53 test
+vitaly@vitaly-VirtualBox:~/lesson5$ mkdir test/ch
+vitaly@vitaly-VirtualBox:~/lesson5$ ls
+file22  file44  test
+vitaly@vitaly-VirtualBox:~/lesson5$ cd test
+vitaly@vitaly-VirtualBox:~/lesson5/test$ ls
+ch  file33  file55
+vitaly@vitaly-VirtualBox:~/lesson5/test$ ls -l
+итого 4
+drwxrwsr-x 2 vitaly developer 4096 окт 15 10:42 ch
+lrwxrwxrwx 1 vitaly vitaly       5 окт 15 09:14 file33 -> file1
+lrwxrwxrwx 1 vitaly vitaly       6 окт 15 09:51 file55 -> file22
+vitaly@vitaly-VirtualBox:~/lesson5/test$ chmod +t ch
+vitaly@vitaly-VirtualBox:~/lesson5/test$ ls -l
+итого 4
+drwxrwxr-t 2 vitaly developer 4096 окт 15 10:42 ch
+lrwxrwxrwx 1 vitaly vitaly       5 окт 15 09:14 file33 -> file1
+lrwxrwxrwx 1 vitaly vitaly       6 окт 15 09:51 file55 -> file22
+vitaly@vitaly-VirtualBox:~/lesson5/test$ 
+vitaly@vitaly-VirtualBox:~/lesson5/test$ cd ..
+vitaly@vitaly-VirtualBox:~/lesson5$ mkdir test2
+vitaly@vitaly-VirtualBox:~/lesson5$ echo "testread" > test2/file_read
+vitaly@vitaly-VirtualBox:~/lesson5$ ls
+file22  file44  test  test2
+vitaly@vitaly-VirtualBox:~/lesson5$ ls test2
+file_read
+vitaly@vitaly-VirtualBox:~/lesson5$ ls -l
+итого 16
+-rw-rw-r-- 1 vitaly vitaly      24 окт 15 09:14 file22
+-rw------- 1 vitaly vitaly      24 окт 15 09:12 file44
+drwxrwsr-x 3 vitaly developer 4096 окт 15 10:42 test
+drwxrwxr-x 2 vitaly vitaly    4096 окт 15 11:02 test2
+vitaly@vitaly-VirtualBox:~/lesson5$ chmod -r test2
+vitaly@vitaly-VirtualBox:~/lesson5$ ls -l
+итого 16
+-rw-rw-r-- 1 vitaly vitaly      24 окт 15 09:14 file22
+-rw------- 1 vitaly vitaly      24 окт 15 09:12 file44
+drwxrwsr-x 3 vitaly developer 4096 окт 15 10:42 test
+d-wx-wx--x 2 vitaly vitaly    4096 окт 15 11:02 test2
+vitaly@vitaly-VirtualBox:~/lesson5$ ls
+file22  file44  test  test2
+vitaly@vitaly-VirtualBox:~/lesson5$ ls test2
+ls: невозможно открыть каталог 'test2': Отказано в доступе
+vitaly@vitaly-VirtualBox:~/lesson5$ 
+
+
