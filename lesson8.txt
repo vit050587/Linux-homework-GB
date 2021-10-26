@@ -1,0 +1,1222 @@
+To run a command as administrator (user "root"), use "sudo <command>".
+
+See "man sudo_root" for details.
+
+ 
+
+vitaly@SQL:~$ whoami
+
+vitaly
+
+vitaly@SQL:~$ docker --help
+
+ 
+
+Команда «docker» не найдена, но может быть установлена с помощью:
+
+ 
+
+sudo apt install docker.io
+
+ 
+
+vitaly@SQL:~$ sudo apt install docker.io
+
+[sudo] пароль для vitaly:
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей
+
+Чтение информации о состоянии… Готово
+
+Будут установлены следующие дополнительные пакеты:
+
+bridge-utils containerd git git-man liberror-perl pigz runc ubuntu-fan
+
+Предлагаемые пакеты:
+
+ifupdown aufs-tools btrfs-progs cgroupfs-mount | cgroup-lite debootstrap
+
+docker-doc rinse zfs-fuse | zfsutils git-daemon-run | git-daemon-sysvinit
+
+git-doc git-el git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn
+
+Следующие НОВЫЕ пакеты будут установлены:
+
+bridge-utils containerd docker.io git git-man liberror-perl pigz runc
+
+ubuntu-fan
+
+Обновлено 0 пакетов, установлено 9 новых пакетов, для удаления отмечено 0 пакетов, и 110 пакетов не обновлено.
+
+Необходимо скачать 79,4 MB архивов.
+
+После данной операции объём занятого дискового пространства возрастёт на 397 MB.
+
+Хотите продолжить? [Д/н] y
+
+Пол:1 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 pigz amd64 2.4-1 [57,4 kB]
+
+Пол:2 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 bridge-utils amd64 1.6-2ubuntu1 [30,5 kB]
+
+Пол:3 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 runc amd64 1.0.0~rc95-0ubuntu1~20.04.2 [4 087 kB]
+
+Пол:4 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 containerd amd64 1.5.2-0ubuntu1~20.04.3 [32,9 MB]
+
+Пол:5 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe amd64 docker.io amd64 20.10.7-0ubuntu1~20.04.2 [36,9 MB]
+
+Пол:6 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 liberror-perl all 0.17029-1 [26,5 kB]
+
+Пол:7 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 git-man all 1:2.25.1-1ubuntu3.2 [884 kB]
+
+Пол:8 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 git amd64 1:2.25.1-1ubuntu3.2 [4 554 kB]
+
+Пол:9 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 ubuntu-fan all 0.12.13 [34,5 kB]
+
+Получено 79,4 MB за 10с (7 719 kB/s)
+
+Предварительная настройка пакетов …
+
+Выбор ранее не выбранного пакета pigz.
+
+(Чтение базы данных … на данный момент установлено 149928 файлов и каталогов.)
+
+Подготовка к распаковке …/0-pigz_2.4-1_amd64.deb …
+
+Распаковывается pigz (2.4-1) …
+
+Выбор ранее не выбранного пакета bridge-utils.
+
+Подготовка к распаковке …/1-bridge-utils_1.6-2ubuntu1_amd64.deb …
+
+Распаковывается bridge-utils (1.6-2ubuntu1) …
+
+Выбор ранее не выбранного пакета runc.
+
+Подготовка к распаковке …/2-runc_1.0.0~rc95-0ubuntu1~20.04.2_amd64.deb …
+
+Распаковывается runc (1.0.0~rc95-0ubuntu1~20.04.2) …
+
+Выбор ранее не выбранного пакета containerd.
+
+Подготовка к распаковке …/3-containerd_1.5.2-0ubuntu1~20.04.3_amd64.deb …
+
+Распаковывается containerd (1.5.2-0ubuntu1~20.04.3) …
+
+Выбор ранее не выбранного пакета docker.io.
+
+Подготовка к распаковке …/4-docker.io_20.10.7-0ubuntu1~20.04.2_amd64.deb …
+
+Распаковывается docker.io (20.10.7-0ubuntu1~20.04.2) …
+
+Выбор ранее не выбранного пакета liberror-perl.
+
+Подготовка к распаковке …/5-liberror-perl_0.17029-1_all.deb …
+
+Распаковывается liberror-perl (0.17029-1) …
+
+Выбор ранее не выбранного пакета git-man.
+
+Подготовка к распаковке …/6-git-man_1%3a2.25.1-1ubuntu3.2_all.deb …
+
+Распаковывается git-man (1:2.25.1-1ubuntu3.2) …
+
+Выбор ранее не выбранного пакета git.
+
+Подготовка к распаковке …/7-git_1%3a2.25.1-1ubuntu3.2_amd64.deb …
+
+Распаковывается git (1:2.25.1-1ubuntu3.2) …
+
+Выбор ранее не выбранного пакета ubuntu-fan.
+
+Подготовка к распаковке …/8-ubuntu-fan_0.12.13_all.deb …
+
+Распаковывается ubuntu-fan (0.12.13) …
+
+Настраивается пакет runc (1.0.0~rc95-0ubuntu1~20.04.2) …
+
+Настраивается пакет liberror-perl (0.17029-1) …
+
+Настраивается пакет bridge-utils (1.6-2ubuntu1) …
+
+Настраивается пакет pigz (2.4-1) …
+
+Настраивается пакет git-man (1:2.25.1-1ubuntu3.2) …
+
+Настраивается пакет containerd (1.5.2-0ubuntu1~20.04.3) …
+
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service
+
+→ /lib/systemd/system/containerd.service.
+
+Настраивается пакет ubuntu-fan (0.12.13) …
+
+Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service
+
+→ /lib/systemd/system/ubuntu-fan.service.
+
+Настраивается пакет docker.io (20.10.7-0ubuntu1~20.04.2) …
+
+Добавляется группа «docker» (GID 134) ...
+
+Готово.
+
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /l
+
+ib/systemd/system/docker.service.
+
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/s
+
+ystemd/system/docker.socket.
+
+Настраивается пакет git (1:2.25.1-1ubuntu3.2) …
+
+Обрабатываются триггеры для man-db (2.9.1-1) …
+
+Обрабатываются триггеры для systemd (245.4-4ubuntu3.11) …
+
+vitaly@SQL:~$ sudo apt install docker -y
+
+Чтение списков пакетов… Готово
+
+Построение дерева зависимостей
+
+Чтение информации о состоянии… Готово
+
+Будут установлены следующие дополнительные пакеты:
+
+wmdocker
+
+Следующие НОВЫЕ пакеты будут установлены:
+
+docker wmdocker
+
+Обновлено 0 пакетов, установлено 2 новых пакетов, для удаления отмечено 0 пакетов, и 110 пакетов не обновлено.
+
+Необходимо скачать 14,3 kB архивов.
+
+После данной операции объём занятого дискового пространства возрастёт на 58,4 kB.
+
+Пол:1 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 wmdocker amd64 1.5-2 [13,0 kB]
+
+Пол:2 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 docker all 1.5-2 [1 316 B]
+
+Получено 14,3 kB за 0с (109 kB/s)
+
+Выбор ранее не выбранного пакета wmdocker.
+
+(Чтение базы данных … на данный момент установлено 151183 файла и каталога.)
+
+Подготовка к распаковке …/wmdocker_1.5-2_amd64.deb …
+
+Распаковывается wmdocker (1.5-2) …
+
+Выбор ранее не выбранного пакета docker.
+
+Подготовка к распаковке …/archives/docker_1.5-2_all.deb …
+
+Распаковывается docker (1.5-2) …
+
+Настраивается пакет wmdocker (1.5-2) …
+
+Настраивается пакет docker (1.5-2) …
+
+Обрабатываются триггеры для man-db (2.9.1-1) …
+
+vitaly@SQL:~$ docker --help
+
+ 
+
+Usage: docker [OPTIONS] COMMAND
+
+ 
+
+A self-sufficient runtime for containers
+
+ 
+
+Options:
+
+--config string Location of client config files (default
+
+"/home/vitaly/.docker")
+
+-c, --context string Name of the context to use to connect to the
+
+daemon (overrides DOCKER_HOST env var and
+
+default context set with "docker context use")
+
+-D, --debug Enable debug mode
+
+-H, --host list Daemon socket(s) to connect to
+
+-l, --log-level string Set the logging level
+
+("debug"|"info"|"warn"|"error"|"fatal")
+
+(default "info")
+
+--tls Use TLS; implied by --tlsverify
+
+--tlscacert string Trust certs signed only by this CA (default
+
+"/home/vitaly/.docker/ca.pem")
+
+--tlscert string Path to TLS certificate file (default
+
+"/home/vitaly/.docker/cert.pem")
+
+--tlskey string Path to TLS key file (default
+
+"/home/vitaly/.docker/key.pem")
+
+--tlsverify Use TLS and verify the remote
+
+-v, --version Print version information and quit
+
+ 
+
+Management Commands:
+
+builder Manage builds
+
+config Manage Docker configs
+
+container Manage containers
+
+context Manage contexts
+
+image Manage images
+
+manifest Manage Docker image manifests and manifest lists
+
+network Manage networks
+
+node Manage Swarm nodes
+
+plugin Manage plugins
+
+secret Manage Docker secrets
+
+service Manage services
+
+stack Manage Docker stacks
+
+swarm Manage Swarm
+
+system Manage Docker
+
+trust Manage trust on Docker images
+
+volume Manage volumes
+
+ 
+
+Commands:
+
+attach Attach local standard input, output, and error streams to a running container
+
+build Build an image from a Dockerfile
+
+commit Create a new image from a container's changes
+
+cp Copy files/folders between a container and the local filesystem
+
+create Create a new container
+
+diff Inspect changes to files or directories on a container's filesystem
+
+events Get real time events from the server
+
+exec Run a command in a running container
+
+export Export a container's filesystem as a tar archive
+
+history Show the history of an image
+
+images List images
+
+import Import the contents from a tarball to create a filesystem image
+
+info Display system-wide information
+
+inspect Return low-level information on Docker objects
+
+kill Kill one or more running containers
+
+load Load an image from a tar archive or STDIN
+
+login Log in to a Docker registry
+
+logout Log out from a Docker registry
+
+logs Fetch the logs of a container
+
+pause Pause all processes within one or more containers
+
+port List port mappings or a specific mapping for the container
+
+ps List containers
+
+pull Pull an image or a repository from a registry
+
+push Push an image or a repository to a registry
+
+rename Rename a container
+
+restart Restart one or more containers
+
+rm Remove one or more containers
+
+rmi Remove one or more images
+
+run Run a command in a new container
+
+save Save one or more images to a tar archive (streamed to STDOUT by default)
+
+search Search the Docker Hub for images
+
+start Start one or more stopped containers
+
+stats Display a live stream of container(s) resource usage statistics
+
+stop Stop one or more running containers
+
+tag Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+
+top Display the running processes of a container
+
+unpause Unpause all processes within one or more containers
+
+update Update configuration of one or more containers
+
+version Show the Docker version information
+
+wait Block until one or more containers stop, then print their exit codes
+
+ 
+
+Run 'docker COMMAND --help' for more information on a command.
+
+ 
+
+To get more help with docker, check out our guides at https://docs.docker.com/go/guides/
+
+vitaly@SQL:~$ sudo docker ps
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+
+vitaly@SQL:~$ sudo docker ps -a
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+
+vitaly@SQL:~$ sudo docker images
+
+REPOSITORY TAG IMAGE ID CREATED SIZE
+
+vitaly@SQL:~$
+
+vitaly@SQL:~$ sudo docker run hello-world
+
+Unable to find image 'hello-world:latest' locally
+
+latest: Pulling from library/hello-world
+
+2db29710123e: Pull complete
+
+Digest: sha256:37a0b92b08d4919615c3ee023f7ddb068d12b8387475d64c622ac30f45c29c51
+
+Status: Downloaded newer image for hello-world:latest
+
+ 
+
+Hello from Docker!
+
+This message shows that your installation appears to be working correctly.
+
+ 
+
+To generate this message, Docker took the following steps:
+
+1. The Docker client contacted the Docker daemon.
+
+2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+
+(amd64)
+
+3. The Docker daemon created a new container from that image which runs the
+
+executable that produces the output you are currently reading.
+
+4. The Docker daemon streamed that output to the Docker client, which sent it
+
+to your terminal.
+
+ 
+
+To try something more ambitious, you can run an Ubuntu container with:
+
+$ docker run -it ubuntu bash
+
+ 
+
+Share images, automate workflows, and more with a free Docker ID:
+
+https://hub.docker.com/
+
+ 
+
+For more examples and ideas, visit:
+
+https://docs.docker.com/get-started/
+
+ 
+
+vitaly@SQL:~$ sudo docker ps -a
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+
+7a2afc385a5b hello-world "/hello" 17 seconds ago Exited (0) 15 seconds ago kind_banzai
+
+vitaly@SQL:~$ sudo docker images
+
+REPOSITORY TAG IMAGE ID CREATED SIZE
+
+hello-world latest feb5d9fea6a5 4 weeks ago 13.3kB
+
+vitaly@SQL:~$
+
+ 
+
+ 
+
+ 
+
+vitaly@SQL:~$ sudo groupadd docker
+
+[sudo] пароль для vitaly:
+
+groupadd: группа «docker» уже существует
+
+vitaly@SQL:~$ sudo usermod -aG docker $USER
+
+vitaly@SQL:~$ tail /etc/group
+
+geoclue:x:127:
+
+pulse:x:128:
+
+pulse-access:x:129:
+
+gdm:x:130:
+
+sssd:x:131:
+
+lxd:x:132:vitaly
+
+vitaly:x:1000:
+
+sambashare:x:133:vitaly
+
+systemd-coredump:x:999:
+
+docker:x:134:vitaly
+
+vitaly@SQL:~$ sudo service docker restart
+
+vitaly@SQL:~$ newgrp docker
+
+vitaly@SQL:~$ docker run hello-world
+
+ 
+
+Hello from Docker!
+
+This message shows that your installation appears to be working correctly.
+
+ 
+
+To generate this message, Docker took the following steps:
+
+1. The Docker client contacted the Docker daemon.
+
+2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+
+(amd64)
+
+3. The Docker daemon created a new container from that image which runs the
+
+executable that produces the output you are currently reading.
+
+4. The Docker daemon streamed that output to the Docker client, which sent it
+
+to your terminal.
+
+ 
+
+To try something more ambitious, you can run an Ubuntu container with:
+
+$ docker run -it ubuntu bash
+
+ 
+
+Share images, automate workflows, and more with a free Docker ID:
+
+https://hub.docker.com/
+
+ 
+
+For more examples and ideas, visit:
+
+https://docs.docker.com/get-started/
+
+ 
+
+vitaly@SQL:~$
+
+ 
+
+ 
+
+ 
+
+vitaly@SQL:~$ docker run -d -p 80:80 docker/getting-started
+
+Unable to find image 'docker/getting-started:latest' locally
+
+latest: Pulling from docker/getting-started
+
+540db60ca938: Pull complete
+
+0ae30075c5da: Pull complete
+
+9da81141e74e: Pull complete
+
+b2e41dd2ded0: Pull complete
+
+7f40e809fb2d: Pull complete
+
+758848c48411: Pull complete
+
+23ded5c3e3fe: Pull complete
+
+38a847d4d941: Pull complete
+
+Digest: sha256:10555bb0c50e13fc4dd965ddb5f00e948ffa53c13ff15dcdc85b7ab65e1f240b
+
+Status: Downloaded newer image for docker/getting-started:latest
+
+83d2980773efd1a5923b8762f125f3c521e053a8cd0ea4a5dcac02fcf64ada94
+
+vitaly@SQL:~$ docker ps
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+
+83d2980773ef docker/getting-started "/docker-entrypoint.…" 11 seconds ago Up 8 seconds 0.0.0.0:80->80/tcp, :::80->80/tcp determined_merkle
+
+vitaly@SQL:~$ docker stop 83d2980773ef
+
+83d2980773ef
+
+vitaly@SQL:~$ docker ps
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+
+vitaly@SQL:~$
+
+ 
+
+ 
+
+vitaly@SQL:~$ docker search nginx
+
+NAME DESCRIPTION STARS OFFICIAL AUTOMATED
+
+nginx Official build of Nginx. 15707 [OK]
+
+jwilder/nginx-proxy Automated Nginx reverse proxy for docker con… 2086 [OK]
+
+richarvey/nginx-php-fpm Container running Nginx + PHP-FPM capable of… 818 [OK]
+
+jc21/nginx-proxy-manager Docker container for managing Nginx proxy ho… 260
+
+linuxserver/nginx An Nginx container, brought to you by LinuxS… 159
+
+tiangolo/nginx-rtmp Docker image with Nginx using the nginx-rtmp… 142 [OK]
+
+jlesage/nginx-proxy-manager Docker container for Nginx Proxy Manager 140 [OK]
+
+alfg/nginx-rtmp NGINX, nginx-rtmp-module and FFmpeg from sou… 110 [OK]
+
+jasonrivers/nginx-rtmp Docker images to host RTMP streams using NGI… 95 [OK]
+
+nginxdemos/hello NGINX webserver that serves a simple page co… 75 [OK]
+
+privatebin/nginx-fpm-alpine PrivateBin running on an Nginx, php-fpm & Al… 59 [OK]
+
+nginx/nginx-ingress NGINX and NGINX Plus Ingress Controllers fo… 55
+
+nginxinc/nginx-unprivileged Unprivileged NGINX Dockerfiles 54
+
+staticfloat/nginx-certbot Opinionated setup for automatic TLS certs lo… 25 [OK]
+
+nginxproxy/nginx-proxy Automated Nginx reverse proxy for docker con… 23
+
+nginx/nginx-prometheus-exporter NGINX Prometheus Exporter for NGINX and NGIN… 21
+
+schmunk42/nginx-redirect A very simple container to redirect HTTP tra… 19 [OK]
+
+centos/nginx-112-centos7 Platform for running nginx 1.12 or building … 15
+
+centos/nginx-18-centos7 Platform for running nginx 1.8 or building n… 13
+
+bitwarden/nginx The Bitwarden nginx web server acting as a r… 11
+
+flashspys/nginx-static Super Lightweight Nginx Image 11 [OK]
+
+mailu/nginx Mailu nginx frontend 9 [OK]
+
+sophos/nginx-vts-exporter Simple server that scrapes Nginx vts stats a… 7 [OK]
+
+ansibleplaybookbundle/nginx-apb An APB to deploy NGINX 2 [OK]
+
+wodby/nginx Generic nginx 1 [OK]
+
+vitaly@SQL:~$ docker images
+
+REPOSITORY TAG IMAGE ID CREATED SIZE
+
+hello-world latest feb5d9fea6a5 4 weeks ago 13.3kB
+
+docker/getting-started latest 083d7564d904 4 months ago 28MB
+
+vitaly@SQL:~$ docker puul nginx
+
+docker: 'puul' is not a docker command.
+
+See 'docker --help'
+
+vitaly@SQL:~$ docker pull nginx
+
+Using default tag: latest
+
+latest: Pulling from library/nginx
+
+b380bbd43752: Pull complete
+
+fca7e12d1754: Pull complete
+
+745ab57616cb: Pull complete
+
+a4723e260b6f: Pull complete
+
+1c84ebdff681: Pull complete
+
+858292fd2e56: Pull complete
+
+Digest: sha256:644a70516a26004c97d0d85c7fe1d0c3a67ea8ab7ddf4aff193d9f301670cf36
+
+Status: Downloaded newer image for nginx:latest
+
+docker.io/library/nginx:latest
+
+vitaly@SQL:~$ docker images
+
+REPOSITORY TAG IMAGE ID CREATED SIZE
+
+nginx latest 87a94228f133 2 weeks ago 133MB
+
+hello-world latest feb5d9fea6a5 4 weeks ago 13.3kB
+
+docker/getting-started latest 083d7564d904 4 months ago 28MB
+
+vitaly@SQL:~$ docker run -d nginx
+
+81ed52ab17081c08a45db5f9d2c95a888c2fceb649799ecaf558d30651be6929
+
+vitaly@SQL:~$ docker ps
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+
+81ed52ab1708 nginx "/docker-entrypoint.…" 12 seconds ago Up 9 seconds 80/tcp jovial_buck
+
+vitaly@SQL:~$ docker stop 81ed52ab1708
+
+81ed52ab1708
+
+vitaly@SQL:~$ docker run -d -p 8123:80 nginx
+
+d657582e9002d3c055e88a890ff264f335fe9b8f2d1a78dd721db74b73d439c5
+
+vitaly@SQL:~$ docker ps
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+
+d657582e9002 nginx "/docker-entrypoint.…" 26 seconds ago Up 23 seconds 0.0.0.0:8123->80/tcp, :::8123->80/tcp strange_clarke
+
+vitaly@SQL:~$ docker exec -it strange_clarke /bin/bash
+
+root@d657582e9002:/#
+
+root@d657582e9002:/#
+
+root@d657582e9002:/#
+
+root@d657582e9002:/#
+
+root@d657582e9002:/# ls
+
+bin docker-entrypoint.d home media proc sbin tmp
+
+boot docker-entrypoint.sh lib mnt root srv usr
+
+dev etc lib64 opt run sys var
+
+root@d657582e9002:/# find / -name index.html
+
+find: '/proc/31/map_files': Permission denied
+
+/usr/share/nginx/html/index.html
+
+root@d657582e9002:/# cat /usr/share/nginx/html/index.html
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Welcome to nginx!</title>
+
+<style>
+
+html { color-scheme: light dark; }
+
+body { width: 35em; margin: 0 auto;
+
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Welcome to nginx!</h1>
+
+<p>If you see this page, the nginx web server is successfully installed and
+
+working. Further configuration is required.</p>
+
+ 
+
+<p>For online documentation and support please refer to
+
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+
+Commercial support is available at
+
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+ 
+
+<p><em>Thank you for using nginx.</em></p>
+
+</body>
+
+</html>
+
+root@d657582e9002:/# rm /usr/share/nginx/html/index.html
+
+root@d657582e9002:/# cat > /usr/share/nginx/html/index.html
+
+<h1>Welcome to nginx!</h1>
+
+<h2>Hello-World<h2>
+
+root@d657582e9002:/# cat /usr/share/nginx/html/index.html
+
+<h1>Welcome to nginx!</h1>
+
+<h2>Hello-World<h2>
+
+root@d657582e9002:/# exit
+
+exit
+
+vitaly@SQL:~$
+
+ 
+
+vitaly@SQL:~$ docker ps
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+
+d657582e9002 nginx "/docker-entrypoint.…" 23 minutes ago Up 23 minutes 0.0.0.0:8123->80/tcp, :::8123->80/tcp strange_clarke
+
+vitaly@SQL:~$ docker stop d657582e9002
+
+d657582e9002
+
+vitaly@SQL:~$ docker ps
+
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+
+vitaly@SQL:~$
+
+vitaly@SQL:~$
+
+vitaly@SQL:~$ ls
+
+Видео Загрузки Музыка 'Рабочий стол'
+
+Документы Изображения Общедоступные Шаблоны
+
+vitaly@SQL:~$ cat > Dockerfile
+
+FROM ubuntu:latest
+
+MAINTAINER vitaly
+
+RUN apt get update
+
+vitaly@SQL:~$ cat > Dockerfile
+
+FROM ubuntu:latest
+
+MAINTAINER vitaly
+
+RUN apt -get update
+
+RUN apt -get install nginx -y
+
+VOLUME "/var/www/html"
+
+EXPOSE 80
+
+CMD /usr/sbin/nginx -g "daemon off;"
+
+vitaly@SQL:~$ ll
+
+итого 88
+
+drwxr-xr-x 16 vitaly vitaly 4096 окт 26 13:08 ./
+
+drwxr-xr-x 3 root root 4096 окт 25 18:05 ../
+
+-rw------- 1 vitaly vitaly 6434 окт 26 12:28 .bash_history
+
+-rw-r--r-- 1 vitaly vitaly 220 окт 25 18:05 .bash_logout
+
+-rw-r--r-- 1 vitaly vitaly 3771 окт 25 18:05 .bashrc
+
+drwx------ 14 vitaly vitaly 4096 окт 25 18:22 .cache/
+
+drwx------ 12 vitaly vitaly 4096 окт 26 12:07 .config/
+
+-rw-rw-r-- 1 vitaly docker 157 окт 26 13:32 Dockerfile
+
+drwx------ 3 vitaly vitaly 4096 окт 26 12:07 .gnupg/
+
+drwx------ 3 vitaly vitaly 4096 окт 25 18:10 .local/
+
+drwx------ 5 vitaly vitaly 4096 окт 25 18:12 .mozilla/
+
+-rw-r--r-- 1 vitaly vitaly 807 окт 25 18:05 .profile
+
+drwx------ 2 vitaly vitaly 4096 окт 25 18:23 .ssh/
+
+-rw-r--r-- 1 vitaly vitaly 0 окт 26 11:59 .sudo_as_admin_successful
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Видео/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Документы/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Загрузки/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Изображения/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Музыка/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Общедоступные/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 'Рабочий стол'/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Шаблоны/
+
+vitaly@SQL:~$ cat Dockerfile
+
+FROM ubuntu:latest
+
+MAINTAINER vitaly
+
+RUN apt -get update
+
+RUN apt -get install nginx -y
+
+VOLUME "/var/www/html"
+
+EXPOSE 80
+
+CMD /usr/sbin/nginx -g "daemon off;"
+
+vitaly@SQL:~$ docker build -t my-nginx .
+
+Sending build context to Docker daemon 71.61MB
+
+Step 1/7 : FROM ubuntu:latest
+
+latest: Pulling from library/ubuntu
+
+7b1a6ab2e44d: Pull complete
+
+Digest: sha256:626ffe58f6e7566e00254b638eb7e0f3b11d4da9675088f4781a50ae288f3322
+
+Status: Downloaded newer image for ubuntu:latest
+
+---> ba6acccedd29
+
+Step 2/7 : MAINTAINER vitaly
+
+---> Running in cd4528dc6137
+
+Removing intermediate container cd4528dc6137
+
+---> 3d0ad04ff2b8
+
+Step 3/7 : RUN apt -get update
+
+---> Running in 40e12f43fbba
+
+E: Command line option 'g' [from -get] is not understood in combination with the other options.
+
+The command '/bin/sh -c apt -get update' returned a non-zero code: 100
+
+vitaly@SQL:~$ ll
+
+итого 88
+
+drwxr-xr-x 16 vitaly vitaly 4096 окт 26 13:08 ./
+
+drwxr-xr-x 3 root root 4096 окт 25 18:05 ../
+
+-rw------- 1 vitaly vitaly 6434 окт 26 12:28 .bash_history
+
+-rw-r--r-- 1 vitaly vitaly 220 окт 25 18:05 .bash_logout
+
+-rw-r--r-- 1 vitaly vitaly 3771 окт 25 18:05 .bashrc
+
+drwx------ 14 vitaly vitaly 4096 окт 25 18:22 .cache/
+
+drwx------ 12 vitaly vitaly 4096 окт 26 12:07 .config/
+
+-rw-rw-r-- 1 vitaly docker 157 окт 26 13:32 Dockerfile
+
+drwx------ 3 vitaly vitaly 4096 окт 26 12:07 .gnupg/
+
+drwx------ 3 vitaly vitaly 4096 окт 25 18:10 .local/
+
+drwx------ 5 vitaly vitaly 4096 окт 25 18:12 .mozilla/
+
+-rw-r--r-- 1 vitaly vitaly 807 окт 25 18:05 .profile
+
+drwx------ 2 vitaly vitaly 4096 окт 25 18:23 .ssh/
+
+-rw-r--r-- 1 vitaly vitaly 0 окт 26 11:59 .sudo_as_admin_successful
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Видео/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Документы/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Загрузки/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Изображения/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Музыка/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Общедоступные/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 'Рабочий стол'/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Шаблоны/
+
+vitaly@SQL:~$
+
+vitaly@SQL:~$ ls
+
+Видео Загрузки Музыка 'Рабочий стол'
+
+Документы Изображения Общедоступные Шаблоны
+
+vitaly@SQL:~$ cat > Dockerfile
+
+FROM ubuntu:latest
+
+MAINTAINER vitaly
+
+RUN apt get update
+
+vitaly@SQL:~$ cat > Dockerfile
+
+FROM ubuntu:latest
+
+MAINTAINER vitaly
+
+RUN apt -get update
+
+RUN apt -get install nginx -y
+
+VOLUME "/var/www/html"
+
+EXPOSE 80
+
+CMD /usr/sbin/nginx -g "daemon off;"
+
+vitaly@SQL:~$ ll
+
+итого 88
+
+drwxr-xr-x 16 vitaly vitaly 4096 окт 26 13:08 ./
+
+drwxr-xr-x 3 root root 4096 окт 25 18:05 ../
+
+-rw------- 1 vitaly vitaly 6434 окт 26 12:28 .bash_history
+
+-rw-r--r-- 1 vitaly vitaly 220 окт 25 18:05 .bash_logout
+
+-rw-r--r-- 1 vitaly vitaly 3771 окт 25 18:05 .bashrc
+
+drwx------ 14 vitaly vitaly 4096 окт 25 18:22 .cache/
+
+drwx------ 12 vitaly vitaly 4096 окт 26 12:07 .config/
+
+-rw-rw-r-- 1 vitaly docker 157 окт 26 13:32 Dockerfile
+
+drwx------ 3 vitaly vitaly 4096 окт 26 12:07 .gnupg/
+
+drwx------ 3 vitaly vitaly 4096 окт 25 18:10 .local/
+
+drwx------ 5 vitaly vitaly 4096 окт 25 18:12 .mozilla/
+
+-rw-r--r-- 1 vitaly vitaly 807 окт 25 18:05 .profile
+
+drwx------ 2 vitaly vitaly 4096 окт 25 18:23 .ssh/
+
+-rw-r--r-- 1 vitaly vitaly 0 окт 26 11:59 .sudo_as_admin_successful
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Видео/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Документы/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Загрузки/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Изображения/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Музыка/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Общедоступные/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 'Рабочий стол'/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Шаблоны/
+
+vitaly@SQL:~$ cat Dockerfile
+
+FROM ubuntu:latest
+
+MAINTAINER vitaly
+
+RUN apt -get update
+
+RUN apt -get install nginx -y
+
+VOLUME "/var/www/html"
+
+EXPOSE 80
+
+CMD /usr/sbin/nginx -g "daemon off;"
+
+vitaly@SQL:~$ docker build -t my-nginx .
+
+Sending build context to Docker daemon 71.61MB
+
+Step 1/7 : FROM ubuntu:latest
+
+latest: Pulling from library/ubuntu
+
+7b1a6ab2e44d: Pull complete
+
+Digest: sha256:626ffe58f6e7566e00254b638eb7e0f3b11d4da9675088f4781a50ae288f3322
+
+Status: Downloaded newer image for ubuntu:latest
+
+---> ba6acccedd29
+
+Step 2/7 : MAINTAINER vitaly
+
+---> Running in cd4528dc6137
+
+Removing intermediate container cd4528dc6137
+
+---> 3d0ad04ff2b8
+
+Step 3/7 : RUN apt -get update
+
+---> Running in 40e12f43fbba
+
+E: Command line option 'g' [from -get] is not understood in combination with the other options.
+
+The command '/bin/sh -c apt -get update' returned a non-zero code: 100
+
+vitaly@SQL:~$ ll
+
+итого 88
+
+drwxr-xr-x 16 vitaly vitaly 4096 окт 26 13:08 ./
+
+drwxr-xr-x 3 root root 4096 окт 25 18:05 ../
+
+-rw------- 1 vitaly vitaly 6434 окт 26 12:28 .bash_history
+
+-rw-r--r-- 1 vitaly vitaly 220 окт 25 18:05 .bash_logout
+
+-rw-r--r-- 1 vitaly vitaly 3771 окт 25 18:05 .bashrc
+
+drwx------ 14 vitaly vitaly 4096 окт 25 18:22 .cache/
+
+drwx------ 12 vitaly vitaly 4096 окт 26 12:07 .config/
+
+-rw-rw-r-- 1 vitaly docker 157 окт 26 13:32 Dockerfile
+
+drwx------ 3 vitaly vitaly 4096 окт 26 12:07 .gnupg/
+
+drwx------ 3 vitaly vitaly 4096 окт 25 18:10 .local/
+
+drwx------ 5 vitaly vitaly 4096 окт 25 18:12 .mozilla/
+
+-rw-r--r-- 1 vitaly vitaly 807 окт 25 18:05 .profile
+
+drwx------ 2 vitaly vitaly 4096 окт 25 18:23 .ssh/
+
+-rw-r--r-- 1 vitaly vitaly 0 окт 26 11:59 .sudo_as_admin_successful
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Видео/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Документы/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Загрузки/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Изображения/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Музыка/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Общедоступные/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 'Рабочий стол'/
+
+drwxr-xr-x 2 vitaly vitaly 4096 окт 25 18:10 Шаблоны/
+
+vitaly@SQL:~$
+
